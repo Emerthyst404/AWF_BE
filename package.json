@@ -1,13 +1,14 @@
 {
   "name": "awf_be",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "REST API for a social media app",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "test": "jest --runInBand --forceExit"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kalina Cathcart",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
@@ -17,5 +18,9 @@
   "devDependencies": {
     "jest": "^30.3.0",
     "supertest": "^7.2.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.jestTests.js"]
   }
 }
